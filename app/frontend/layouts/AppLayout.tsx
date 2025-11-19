@@ -8,6 +8,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { User } from '@/types'
 import Sidebar from "@/components/Sidebar";
+import MetaTags from '../components/MetaTags'
 
 interface AppLayoutProps {
   children: ReactNode
@@ -21,6 +22,7 @@ export default function AppLayout({ children }: AppLayoutProps) {
 
   return (
     <div className="flex h-screen bg-gray-50">
+      <MetaTags />
       <Sidebar isOpen={sidebarOpen} />
 
       <div className="flex-1 flex flex-col overflow-hidden">

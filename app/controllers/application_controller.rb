@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   layout :set_layout
 
   before_action :configure_permitted_parameters, if: :devise_controller?
+  before_action :set_default_meta_tags
 
   inertia_share categories: -> {
     Category.includes(:topics).all.as_json(methods: :topics_count)
@@ -41,5 +42,16 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: [ :username ])
 
     devise_parameter_sanitizer.permit(:account_update, keys: [ :username ])
+  end
+
+  def set_default_meta_tags
+    inertia_meta.add([
+      { title: "Pups & Pourovers" },
+      { name: "description", content: "Online home of the overcaffeinated dog enthusiast" },
+      { name: "viewport", content: "width=device-width,initial-scale=1" },
+      { name: "apple-mobile-web-app-capable", content: "yes" },
+      { name: "mobile-web-app-capable", content: "yes" },
+      { name: "application-name", content: "Pups & Pourovers" }
+    ])
   end
 end

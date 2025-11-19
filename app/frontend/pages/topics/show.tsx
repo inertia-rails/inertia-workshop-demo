@@ -1,4 +1,4 @@
-import { Head, Form } from '@inertiajs/react'
+import { Form } from '@inertiajs/react'
 import AppLayout from '../../layouts/AppLayout'
 import { Topic, Message, User } from '../../types'
 import LexicalRichTextEditor from '../../components/LexicalRichTextEditor'
@@ -49,8 +49,6 @@ function TopicsShow({ topic, current_user: currentUser }: { topic: Topic, curren
 
   return (
     <AppLayout>
-      <Head title={`${title} - Pups & Pourovers`} />
-
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6">
           <div className="flex items-start justify-between">
