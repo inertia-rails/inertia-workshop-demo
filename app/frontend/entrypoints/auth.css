@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@source "../../../app/views/layouts/auth.html.erb";
+@source "../../../app/views/devise/**/*.{html,erb}";
+@source "../**/*.{js,ts,jsx,tsx}";
+
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";

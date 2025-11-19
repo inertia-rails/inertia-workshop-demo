@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@types/rails__actioncable": "^8.0.3",
+    "vite": "^7.2.2",
+    "vite-plugin-ruby": "^5.1.1"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.9",
+    "@heroicons/react": "^2.2.0",
+    "@inertiajs/react": "^2.2.15",
+    "@lexical/react": "^0.38.2",
+    "@rails/actioncable": "^8.1.100",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.16",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "lexical": "^0.38.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0",
+    "tailwindcss": "^4.1.16",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "check": "tsc -p tsconfig.app.json && tsc -p tsconfig.node.json"
+  }
+}

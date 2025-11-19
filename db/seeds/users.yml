@@ -1,0 +1,17 @@
+# db/seeds/users.yml
+users:
+  - username: dog_lover_alex
+    email: alex@pnp.example
+    about_me: "Passionate dog enthusiast! I've been raising golden retrievers for 15 years. Love hiking with my pack and sharing training tips. Always happy to help new dog owners navigate the joys and challenges of pet parenthood."
+  - username: coffee_snob_chris
+    email: chris@pnp.example
+    about_me: "Third-wave coffee aficionado here. I roast my own beans, own 7 different brewing methods, and can talk for hours about extraction ratios. Passionate about single-origin coffees and supporting ethical farming practices."
+  - username: easygoing_jamie
+    email: jamie@pnp.example
+    about_me: "Just here to chat and learn! I enjoy both dogs and coffee, though I'm not an expert on either. Love friendly discussions and asking questions. Always looking to expand my knowledge while keeping things light and fun."
+  - username: science_sarah
+    email: sarah@pnp.example
+    about_me: "Behavioral scientist and dog trainer specializing in positive reinforcement. I love diving into the research behind dog behavior and coffee chemistry. Always ready to share peer-reviewed studies and evidence-based practices."
+  - username: philosophical_pat
+    email: pat@pnp.example
+    about_me: "Thinker and observer. I find deep meaning in everyday moments - whether it's watching my dog's pure joy or contemplating the ritual of morning coffee. I enjoy thoughtful, introspective conversations about life's simple pleasures."

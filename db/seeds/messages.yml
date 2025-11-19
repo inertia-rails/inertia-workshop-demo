@@ -1,0 +1,238 @@
+# db/seeds/messages.yml
+messages:
+  # Topic 1: Best training methods for puppies?
+  - topic_title: "Best training methods for puppies?"
+    username: dog_lover_alex
+    body: "Hey everyone! I'm starting a new puppy training class and wanted to share what's worked for me. Positive reinforcement has been amazing with my goldens. Anyone else have methods they swear by?"
+  - topic_title: "Best training methods for puppies?"
+    username: science_sarah
+    body: "Great question! As a behavioral scientist, I can confirm that positive reinforcement is backed by extensive research. The key is timing - reward within 2-3 seconds of the desired behavior. Consistency is also crucial."
+  - topic_title: "Best training methods for puppies?"
+    username: easygoing_jamie
+    body: "I'm new to this - what exactly is positive reinforcement? Is it just giving treats?"
+  - topic_title: "Best training methods for puppies?"
+    username: science_sarah
+    body: "Great question! Positive reinforcement means adding something the dog wants (treat, praise, toy) immediately after they perform a desired behavior. It's not just treats - it can be anything the dog finds rewarding. The important part is that it increases the likelihood of the behavior happening again."
+  - topic_title: "Best training methods for puppies?"
+    username: dog_lover_alex
+    body: "Exactly! I've found that my goldens respond really well to verbal praise combined with treats. Over time, you can reduce the treats and they'll still respond to praise. It's all about building that trust and bond."
+  - topic_title: "Best training methods for puppies?"
+    username: philosophical_pat
+    body: "There's something beautiful about the patience required in training. It's not just about teaching commands - it's about mutual understanding and respect. The moments when it clicks are truly special."
+
+  # Topic 2: My dog won't stop barking - help!
+  - topic_title: "My dog won't stop barking - help!"
+    username: science_sarah
+    body: "I'm working with a client whose dog barks excessively, especially when left alone. I've reviewed the literature, but I'd love to hear practical experiences from other owners. What has worked for you?"
+  - topic_title: "My dog won't stop barking - help!"
+    username: dog_lover_alex
+    body: "Oh, I've dealt with this! My golden Max used to bark non-stop when I left. I found that leaving him with puzzle toys filled with treats really helped. It kept him occupied and gave him something positive to focus on."
+  - topic_title: "My dog won't stop barking - help!"
+    username: science_sarah
+    body: "That's a great approach! Puzzle toys are excellent for mental stimulation. I'd also recommend checking what triggers the barking - is it specific sounds, sights, or just general anxiety? Understanding the root cause is crucial."
+  - topic_title: "My dog won't stop barking - help!"
+    username: dog_lover_alex
+    body: "Good point! For Max, it was definitely separation anxiety. I started doing short practice sessions where I'd leave for just a few minutes and gradually increased the time. Now he's much better!"
+  - topic_title: "My dog won't stop barking - help!"
+    username: philosophical_pat
+    body: "I think sometimes we forget that barking is communication. Our dogs are trying to tell us something. Have you tried just sitting quietly with your dog to see if they calm down? Sometimes they just need reassurance."
+
+  # Topic 3: What's the best dog breed for families?
+  - topic_title: "What's the best dog breed for families?"
+    username: easygoing_jamie
+    body: "Hi! We're thinking about getting our first family dog. We have two kids (ages 5 and 8) and want something friendly and patient. Any suggestions?"
+  - topic_title: "What's the best dog breed for families?"
+    username: dog_lover_alex
+    body: "I'm biased, but golden retrievers are amazing family dogs! They're so patient with kids and incredibly gentle. My goldens have been like nannies to my kids. Labs are also fantastic family dogs."
+  - topic_title: "What's the best dog breed for families?"
+    username: science_sarah
+    body: "It's important to consider energy levels and space requirements too. Golden retrievers and labs are great, but they need lots of exercise. If you have a smaller space, consider breeds like cavalier King Charles spaniels or beagles."
+  - topic_title: "What's the best dog breed for families?"
+    username: philosophical_pat
+    body: "I think the best breed is less important than finding the right individual dog. Every dog has their own personality. Spend time with potential dogs before bringing them home - the connection matters more than the breed."
+  - topic_title: "What's the best dog breed for families?"
+    username: dog_lover_alex
+    body: "That's true! But certain breeds do have general temperament traits. For families with kids, you want breeds known for patience and gentleness. Goldens and labs consistently rank high for those traits."
+  - topic_title: "What's the best dog breed for families?"
+    username: easygoing_jamie
+    body: "Thanks everyone! This is really helpful. We'll definitely visit some shelters and meet dogs in person. Appreciate all the advice!"
+
+  # Topic 4: Dealing with separation anxiety
+  - topic_title: "Dealing with separation anxiety"
+    username: dog_lover_alex
+    body: "My new rescue dog has severe separation anxiety. She follows me everywhere and gets very distressed when I leave. Any advice from others who've dealt with this?"
+  - topic_title: "Dealing with separation anxiety"
+    username: science_sarah
+    body: "Separation anxiety is complex and often requires a multi-faceted approach. I'd recommend starting with desensitization - making departures low-key and gradually increasing alone time. Also, never make a big deal about leaving or returning."
+  - topic_title: "Dealing with separation anxiety"
+    username: philosophical_pat
+    body: "It's heartbreaking to see them distressed. I've found that establishing a routine helps. Dogs find comfort in predictability. Also, leaving something with your scent - like a worn t-shirt - can provide comfort."
+  - topic_title: "Dealing with separation anxiety"
+    username: dog_lover_alex
+    body: "I've been trying the desensitization approach! Started with just 30 seconds and we're up to 5 minutes now. It's slow progress but I can see improvement. Thanks for the scent tip!"
+  - topic_title: "Dealing with separation anxiety"
+    username: science_sarah
+    body: "That's great progress! Consistency is key. You might also consider consulting a certified behaviorist if it persists. Sometimes medication can help during the training process, but that should be discussed with a vet."
+
+  # Topic 5: French press vs pour over - which is better?
+  - topic_title: "French press vs pour over - which is better?"
+    username: coffee_snob_chris
+    body: "Alright coffee enthusiasts, let's settle this debate! I've been using both methods for years and I have strong opinions. French press gives you that full body and rich mouthfeel, while pour over gives you clarity and complexity. What's your take?"
+  - topic_title: "French press vs pour over - which is better?"
+    username: easygoing_jamie
+    body: "I'm new to both - which one should I start with? They both seem complicated!"
+  - topic_title: "French press vs pour over - which is better?"
+    username: coffee_snob_chris
+    body: "French press is definitely easier to start with! It's more forgiving and requires less technique. You just add coffee, hot water, wait 4 minutes, and press. Pour over takes more practice to get right."
+  - topic_title: "French press vs pour over - which is better?"
+    username: coffee_snob_chris
+    body: "But honestly, they serve different purposes. French press for a bold, rich cup. Pour over for appreciating subtle flavors in high-quality single-origin beans. I use both depending on the coffee and my mood."
+  - topic_title: "French press vs pour over - which is better?"
+    username: philosophical_pat
+    body: "I love the ritual of pour over. There's something meditative about the slow, deliberate pour. The French press feels more utilitarian to me. Both produce great coffee, but the experience is different."
+  - topic_title: "French press vs pour over - which is better?"
+    username: coffee_snob_chris
+    body: "Exactly! The ritual matters. For me, pour over is my weekend morning ritual - I take my time. French press is for weekdays when I need good coffee fast."
+
+  # Topic 6: Recommendations for beginner espresso machines?
+  - topic_title: "Recommendations for beginner espresso machines?"
+    username: easygoing_jamie
+    body: "I want to start making espresso at home but I'm overwhelmed by all the options. What's a good beginner machine that won't break the bank?"
+  - topic_title: "Recommendations for beginner espresso machines?"
+    username: coffee_snob_chris
+    body: "Start with a Breville Bambino! It's around $300-400 and is fantastic for beginners. It has automatic milk frothing and heats up super fast. Plus, it's pretty forgiving while you learn."
+  - topic_title: "Recommendations for beginner espresso machines?"
+    username: coffee_snob_chris
+    body: "Just remember - the grinder is just as important as the machine! You'll need a good burr grinder. Don't skimp on that or you'll be frustrated with inconsistent shots."
+  - topic_title: "Recommendations for beginner espresso machines?"
+    username: easygoing_jamie
+    body: "Okay, so machine + grinder. Any grinder recommendations for beginners?"
+  - topic_title: "Recommendations for beginner espresso machines?"
+    username: coffee_snob_chris
+    body: "Baratza Encore is a great entry-level grinder. It's around $150 and does a solid job. If you want to go manual, the Timemore C2 is excellent and cheaper, but requires more effort."
+  - topic_title: "Recommendations for beginner espresso machines?"
+    username: philosophical_pat
+    body: "I love the process of learning espresso. It's like learning an instrument - frustrating at first, but so rewarding when you pull that perfect shot. Enjoy the journey!"
+
+  # Topic 7: Understanding coffee tasting notes
+  - topic_title: "Understanding coffee tasting notes"
+    username: coffee_snob_chris
+    body: "New to specialty coffee? Tasting notes can seem confusing at first. 'Notes of blueberry and chocolate' - what does that even mean? Let me break it down: these are flavor associations, not literal ingredients."
+  - topic_title: "Understanding coffee tasting notes"
+    username: easygoing_jamie
+    body: "I've always wondered! So when they say 'blueberry,' it doesn't actually taste like I'm eating blueberries?"
+  - topic_title: "Understanding coffee tasting notes"
+    username: coffee_snob_chris
+    body: "Exactly! It's more like a subtle flavor note that reminds you of blueberries. Ethiopian coffees often have fruity notes like blueberry or strawberry. It's about training your palate to recognize these subtle flavors."
+  - topic_title: "Understanding coffee tasting notes"
+    username: science_sarah
+    body: "There's actually science behind this! Coffee contains hundreds of volatile compounds that contribute to flavor. When you taste 'chocolate' or 'caramel,' you're detecting specific compounds that also exist in those foods."
+  - topic_title: "Understanding coffee tasting notes"
+    username: coffee_snob_chris
+    body: "Yes! And the roasting process develops these flavors. Lighter roasts preserve more fruity, floral notes. Darker roasts develop more chocolatey, nutty, caramel flavors."
+  - topic_title: "Understanding coffee tasting notes"
+    username: philosophical_pat
+    body: "I love how coffee tasting connects us to place and process. Each cup tells a story - the soil, the altitude, the farmer's care, the roaster's skill. It's poetry in a cup."
+  - topic_title: "Understanding coffee tasting notes"
+    username: easygoing_jamie
+    body: "This is fascinating! I'm going to start paying more attention when I drink coffee. Thanks for the education!"
+
+  # Topic 8: Best time of day to drink coffee?
+  - topic_title: "Best time of day to drink coffee?"
+    username: easygoing_jamie
+    body: "When do you all drink your coffee? I've been having it first thing in the morning, but I'm curious if there's a 'best' time."
+  - topic_title: "Best time of day to drink coffee?"
+    username: coffee_snob_chris
+    body: "I'm a morning person, so I have my first cup around 6:30 AM. But I'll have another around 2 PM - never after 3 PM though, or I can't sleep!"
+  - topic_title: "Best time of day to drink coffee?"
+    username: science_sarah
+    body: "Actually, there's research on this! Cortisol levels are naturally high in the morning (around 8-9 AM), so drinking coffee then might be less effective. Some studies suggest waiting 1-2 hours after waking."
+  - topic_title: "Best time of day to drink coffee?"
+    username: coffee_snob_chris
+    body: "Interesting! But honestly, I drink coffee for the ritual and enjoyment, not just the caffeine. That first morning cup is sacred to me, regardless of cortisol levels."
+  - topic_title: "Best time of day to drink coffee?"
+    username: philosophical_pat
+    body: "I love this question. Coffee is so personal. I have mine at sunrise, sitting quietly before the world wakes up. It's less about timing and more about the moment of peace it creates."
+  - topic_title: "Best time of day to drink coffee?"
+    username: easygoing_jamie
+    body: "I think I'll stick with my morning routine, but maybe try that afternoon cup you mentioned! Thanks everyone."
+
+  # Topic 9: Morning routine: Coffee while walking the dog
+  - topic_title: "Morning routine: Coffee while walking the dog"
+    username: philosophical_pat
+    body: "There's something magical about starting the day with coffee in one hand and a leash in the other. The quiet streets, the fresh air, watching my dog's pure joy as we walk. It's become my favorite morning ritual."
+  - topic_title: "Morning routine: Coffee while walking the dog"
+    username: dog_lover_alex
+    body: "Yes! I do this every morning with my golden. There's nothing better than that combination - good coffee, good dog, good start to the day. Though I usually use a travel mug - less spill risk!"
+  - topic_title: "Morning routine: Coffee while walking the dog"
+    username: easygoing_jamie
+    body: "I tried this but kept spilling coffee everywhere! Any tips for not burning myself while managing an excited dog?"
+  - topic_title: "Morning routine: Coffee while walking the dog"
+    username: dog_lover_alex
+    body: "Get a good travel mug with a secure lid! I use one with a flip-top that locks. Also, teach your dog to walk nicely on leash - makes everything easier. Practice makes perfect!"
+  - topic_title: "Morning routine: Coffee while walking the dog"
+    username: philosophical_pat
+    body: "I've found that taking it slow helps. There's no rush. Let the dog sniff and explore. Enjoy your coffee. It's about presence, not productivity. Sometimes the best moments are the unhurried ones."
+  - topic_title: "Morning routine: Coffee while walking the dog"
+    username: coffee_snob_chris
+    body: "I'm jealous! I wish I had a dog. Coffee + dog walks sounds like the perfect morning. Maybe I'll dog-sit for a friend and try this ritual."
+
+  # Topic 10: Dog-friendly coffee shops in your area?
+  - topic_title: "Dog-friendly coffee shops in your area?"
+    username: easygoing_jamie
+    body: "Anyone know of good coffee shops that allow dogs? I'd love to bring my pup while I work or study."
+  - topic_title: "Dog-friendly coffee shops in your area?"
+    username: dog_lover_alex
+    body: "Most places with outdoor patios allow dogs! I've had great experiences at places with covered patios so weather doesn't matter. Just make sure your dog is well-behaved and you clean up after them."
+  - topic_title: "Dog-friendly coffee shops in your area?"
+    username: coffee_snob_chris
+    body: "As a coffee snob, I'm picky about coffee quality AND dog-friendliness. The best combo I've found is places that serve good specialty coffee AND have outdoor seating. Bonus points if they have water bowls for dogs!"
+  - topic_title: "Dog-friendly coffee shops in your area?"
+    username: philosophical_pat
+    body: "I love seeing dogs at coffee shops. There's something communal about it - strangers bonding over dogs while enjoying their coffee. It creates such a warm atmosphere."
+  - topic_title: "Dog-friendly coffee shops in your area?"
+    username: easygoing_jamie
+    body: "Thanks! I'll look for places with patios. My dog is pretty calm, so hopefully we'll be good guests. Any etiquette tips?"
+  - topic_title: "Dog-friendly coffee shops in your area?"
+    username: dog_lover_alex
+    body: "Keep your dog leashed, don't let them beg for food, and always clean up after them. Oh, and tip well - accommodating dogs is extra work for the staff!"
+
+  # Topic 11: Caffeine and dogs - safety discussion
+  - topic_title: "Caffeine and dogs - safety discussion"
+    username: science_sarah
+    body: "Important safety discussion! I've seen owners sharing coffee with their dogs, and I want to make sure everyone knows: caffeine is toxic to dogs. Even small amounts can cause serious health issues."
+  - topic_title: "Caffeine and dogs - safety discussion"
+    username: dog_lover_alex
+    body: "This is so important! I've had to stop friends from giving their dogs coffee. The symptoms can be scary - restlessness, rapid heart rate, tremors. It's not worth the risk."
+  - topic_title: "Caffeine and dogs - safety discussion"
+    username: easygoing_jamie
+    body: "Oh no! I didn't know this. My dog sometimes tries to get my coffee. How do I make sure they stay safe?"
+  - topic_title: "Caffeine and dogs - safety discussion"
+    username: science_sarah
+    body: "Keep coffee out of reach, don't leave cups unattended, and educate anyone who watches your dog. If your dog accidentally ingests caffeine, contact your vet immediately. The sooner treatment starts, the better the outcome."
+  - topic_title: "Caffeine and dogs - safety discussion"
+    username: philosophical_pat
+    body: "It's interesting how we share so much with our dogs, but some things are just not meant to be shared. Coffee is our ritual - water and treats are theirs. There's beauty in that difference."
+  - topic_title: "Caffeine and dogs - safety discussion"
+    username: coffee_snob_chris
+    body: "Thanks for bringing this up! I'll be extra careful with my coffee around dogs. Better safe than sorry."
+
+  # Topic 12: Best coffee to enjoy while watching your dog play
+  - topic_title: "Best coffee to enjoy while watching your dog play"
+    username: philosophical_pat
+    body: "Sitting at the dog park, watching my dog run and play with such pure joy, I'm sipping my coffee and reflecting on these simple moments of happiness. What coffee do you bring for these moments?"
+  - topic_title: "Best coffee to enjoy while watching your dog play"
+    username: coffee_snob_chris
+    body: "For me, it's a smooth, easy-drinking coffee - nothing too complex that requires attention. Usually a medium roast blend that's forgiving even if it cools down a bit. The focus is on the dog, not the coffee!"
+  - topic_title: "Best coffee to enjoy while watching your dog play"
+    username: dog_lover_alex
+    body: "I bring a travel mug of my usual morning blend. Nothing fancy, just something I know I'll enjoy. But honestly, I'm usually so focused on watching my golden play that I forget about the coffee entirely!"
+  - topic_title: "Best coffee to enjoy while watching your dog play"
+    username: easygoing_jamie
+    body: "I'm still figuring out my coffee preferences, but I love this idea! Maybe I'll try different coffees at the dog park and see what I like best."
+  - topic_title: "Best coffee to enjoy while watching your dog play"
+    username: philosophical_pat
+    body: "That's the spirit! The coffee is just the companion to the moment. The real joy is watching our dogs be dogs - playful, free, present. Everything else is secondary."
+  - topic_title: "Best coffee to enjoy while watching your dog play"
+    username: coffee_snob_chris
+    body: "Well said. Sometimes the best coffee experience isn't about the perfect extraction or tasting notes - it's about the moment it accompanies."
