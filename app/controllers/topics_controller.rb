@@ -23,4 +23,26 @@ class TopicsController < ApplicationController
       ])
     render inertia: { topic: }
   end
+
+  def new
+    topic = Topic.new(category_id: params.dig(:topic, :category_id))
+
+    render inertia: { topic: }
+  end
+
+  def create
+    topic = current_user.topics.build(topic_params)
+
+    if topic.save(context: :form_submission)
+      redirect_to topic, notice: "Topic created successfully"
+    else
+      redirect_to new_topic_path, inertia: { errors: topic.errors }
+    end
+  end
+
+  private
+
+  def topic_params
+    params.require(:topic).permit(:title, :category_id, messages_attributes: [ :body ])
+  end
 end
