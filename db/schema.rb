@@ -18,6 +18,14 @@ ActiveRecord::Schema[8.1].define(version: 2025_11_18_032918) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "chat_messages", force: :cascade do |t|
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
+    t.index ["user_id"], name: "index_chat_messages_on_user_id"
+  end
+
   create_table "messages", force: :cascade do |t|
     t.text "body"
     t.datetime "created_at", null: false
@@ -51,6 +59,7 @@ ActiveRecord::Schema[8.1].define(version: 2025_11_18_032918) do
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
+  add_foreign_key "chat_messages", "users"
   add_foreign_key "messages", "topics"
   add_foreign_key "messages", "users"
   add_foreign_key "topics", "categories"
