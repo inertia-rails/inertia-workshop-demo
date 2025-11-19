@@ -6,8 +6,10 @@ import {
   MagnifyingGlassIcon,
   ChevronDownIcon
 } from '@heroicons/react/24/outline'
+
 import { User } from '@/types'
 import Sidebar from "@/components/Sidebar";
+import UserProfileModal from '../components/UserProfileModal'
 
 interface AppLayoutProps {
   children: ReactNode
@@ -95,6 +97,7 @@ export default function AppLayout({ children }: AppLayoutProps) {
           {children}
         </main>
       </div>
+      <UserProfileModal />
     </div>
   )
 }
