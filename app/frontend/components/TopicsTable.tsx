@@ -1,8 +1,9 @@
 import { Link } from '@inertiajs/react'
 import { Topic } from '../types'
 import Avatar from './Avatar'
+import TrendingIcon from './TrendingIcon';
 
-function TopicRow({ topic }: { topic: Topic }) {
+function TopicRow({ topic, isTrending }: { topic: Topic, isTrending?: boolean }) {
   const {
     id,
     title,
@@ -23,6 +24,7 @@ function TopicRow({ topic }: { topic: Topic }) {
       <td className="px-6 py-4">
         <Link href={`/topics/${id}`} className="text-sm font-medium text-sky-700">
           {title}
+          {isTrending && <TrendingIcon className="mx-1" />}
         </Link>
         <br />
         <span className="text-sm text-gray-500 mt-1">{categoryName}</span>
@@ -44,7 +46,7 @@ function TopicRow({ topic }: { topic: Topic }) {
   )
 }
 
-export default function TopicsTable({ topics }: { topics: Topic[] }) {
+export default function TopicsTable({ topics, trendingTopics = [] }: { topics: Topic[], trendingTopics?: number[] }) {
   return (
     <table className="min-w-full divide-y divide-gray-200">
       <thead className="bg-gray-50">
@@ -65,7 +67,7 @@ export default function TopicsTable({ topics }: { topics: Topic[] }) {
       </thead>
       <tbody className="bg-white divide-y divide-gray-200">
         {topics.map((topic: Topic) => (
-          <TopicRow key={topic.id} topic={topic} />
+          <TopicRow key={topic.id} topic={topic} isTrending={trendingTopics.includes(topic.id)} />
         ))}
         {topics.length === 0 && (
           <tr>
