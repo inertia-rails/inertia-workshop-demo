@@ -33,12 +33,12 @@ class TopicsController < ApplicationController
   end
 
   def create
-    topic = current_user.topics.build(topic_params)
+    topic_form = TopicForm.new(topic_params.merge(user: current_user))
 
-    if topic.save(context: :form_submission)
-      redirect_to topic, notice: "Topic created successfully"
+    if topic_form.save
+      redirect_to topic_form.topic, notice: "Topic created successfully"
     else
-      redirect_to new_topic_path, inertia: { errors: topic.errors }
+      redirect_to new_topic_path, inertia: { errors: topic_form.errors }
     end
   end
 
