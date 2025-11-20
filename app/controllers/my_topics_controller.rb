@@ -1,17 +1,10 @@
  class MyTopicsController < ApplicationController
   def index
-    topics = Topic.includes(:user, :category, messages: :user)
-      .joins(:messages)
-      .where(messages: { user_id: current_user.id })
-      .distinct
+    @topics = Topic.includes(:user, :category, messages: :user)
+      .where(id: current_user.messages.select(:topic_id))
       .order(created_at: :desc)
-      .to_a
-      .as_json(include: [
-        :user,
-        :category,
-        messages: { include: :user }
-      ])
 
-    render inertia: { topics: }
+    # Custom Serializer Selection
+    render_inertia(serializer: TopicsIndexResource)
   end
  end
