@@ -22,4 +22,5 @@ Rails.application.routes.draw do
   resources :categories, only: [ :show ]
 
   resources :my_topics, only: [ :index ]
+  get "search", to: "search#index"
 end

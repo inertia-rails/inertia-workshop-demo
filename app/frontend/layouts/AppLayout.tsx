@@ -1,5 +1,5 @@
 import { ReactNode, useState } from 'react'
-import { Link, usePage, router } from '@inertiajs/react'
+import { Link, usePage, router, Form } from '@inertiajs/react'
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/react'
 import {
   Bars3Icon,
@@ -25,7 +25,7 @@ export default function AppLayout({ children }: AppLayoutProps) {
 
       <div className="flex-1 flex flex-col overflow-hidden">
         <header className="bg-white border-b border-gray-200 h-16 flex items-center justify-between px-6">
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 flex-1">
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}
               className="p-2 rounded-md hover:bg-gray-100 text-gray-600 hover:text-gray-900"
@@ -33,16 +33,19 @@ export default function AppLayout({ children }: AppLayoutProps) {
               <Bars3Icon className="h-6 w-6" />
             </button>
             <div className="flex-1 max-w-lg">
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <MagnifyingGlassIcon className="h-5 w-5 text-gray-400" />
+              <Form action="/search" method="get">
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <MagnifyingGlassIcon className="h-5 w-5 text-gray-400" />
+                  </div>
+                  <input
+                    type="text"
+                    name="query"
+                    placeholder="Search"
+                    className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+                  />
                 </div>
-                <input
-                  type="text"
-                  placeholder="Search"
-                  className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
-                />
-              </div>
+              </Form>
             </div>
           </div>
 
