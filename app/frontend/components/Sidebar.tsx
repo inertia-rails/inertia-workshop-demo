@@ -1,6 +1,4 @@
 import { Link, usePage } from "@inertiajs/react";
-import { Category } from "@/types";
-
 
 function getLinkClasses(currentUrl: string, targetUrl: string) {
   const isActive = currentUrl === targetUrl
@@ -63,7 +61,7 @@ export default function Sidebar({ isOpen }: { isOpen: boolean }) {
               Categories
             </h3>
             <div className="space-y-1">
-              {categories.map((category: Category) => {
+              {categories.map((category) => {
                 const categoryUrl = `/categories/${category.id}`
                 const classes = getLinkClasses(currentUrl, categoryUrl)
                 return (
@@ -74,7 +72,7 @@ export default function Sidebar({ isOpen }: { isOpen: boolean }) {
                   >
                     <span>{category.name}</span>
                     <span className={`text-xs ${classes.count}`}>
-                      {category.topics_count}
+                      {category.topicsCount}
                     </span>
                   </Link>
                 )

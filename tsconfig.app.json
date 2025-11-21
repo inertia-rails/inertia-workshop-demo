@@ -24,6 +24,7 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Aliases */
+    "baseUrl": ".",
     "paths": {
       "@/*": ["app/frontend/*"]
     }

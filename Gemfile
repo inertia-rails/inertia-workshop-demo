@@ -70,3 +70,8 @@ gem "vite_rails", "~> 3.0"
 gem "devise", "~> 4.9"
 
 gem "pagy", "~> 43.0"
+
+gem "typelizer", "~> 0.5.3"
+gem "alba", "~> 3.10"
+gem "alba-inertia", "~> 0.1.1"
+gem "listen", "~> 3.9"

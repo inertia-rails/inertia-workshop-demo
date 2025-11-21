@@ -1,11 +1,10 @@
 import { Link, usePage } from '@inertiajs/react'
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/24/outline'
-import { Category, User } from '../../types'
-import Luna from '../../assets/luna.gif'
+import Luna from '@/assets/luna.gif'
 
 export default function LandingIndex() {
-  const { props: { categories, current_user: currentUser } } = usePage<{ categories: Category[], current_user: User }>();
+  const { categories, currentUser } = usePage().props;
 
   return (
     <>
@@ -38,7 +37,7 @@ export default function LandingIndex() {
                     className="z-[60] mt-2 w-48 rounded-md bg-white shadow-lg ring-1 ring-black/5 transition duration-100 ease-out data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0"
                   >
                     <div className="py-1">
-                      {categories.map((category: Category) => (
+                      {categories.map((category) => (
                         <MenuItem key={category.id}>
                           <a
                             href={`/categories/${category.id}`}

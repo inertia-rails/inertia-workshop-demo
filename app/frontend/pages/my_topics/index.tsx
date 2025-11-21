@@ -1,9 +1,10 @@
 import { Head } from '@inertiajs/react'
-import AppLayout from '../../layouts/AppLayout'
-import { Topic } from '../../types'
-import TopicsTable from '../../components/TopicsTable'
 
-function MyTopicsIndex({ topics }: { topics: Topic[] }) {
+import AppLayout from '@/layouts/AppLayout'
+import type { TopicsIndex } from '@/types'
+import TopicsTable from '@/components/TopicsTable'
+
+function MyTopicsIndex({ topics }: TopicsIndex) {
   return (
     <AppLayout>
       <Head title="My Topics - Pups & Pourovers" />

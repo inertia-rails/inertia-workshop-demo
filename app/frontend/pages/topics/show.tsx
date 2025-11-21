@@ -1,6 +1,6 @@
 import { Head, Form } from '@inertiajs/react'
 import AppLayout from '../../layouts/AppLayout'
-import { Topic, Message, User } from '../../types'
+import type {Message, TopicsShow, SharedProps} from '../../types'
 import LexicalRichTextEditor from '../../components/LexicalRichTextEditor'
 import ReactMarkdown from 'react-markdown'
 import Avatar from '@/components/Avatar'
@@ -8,7 +8,7 @@ import Avatar from '@/components/Avatar'
 function MessageRow({ message }: { message: Message }) {
   const {
     user,
-    created_at,
+    createdAt,
     body,
   } = message;
   const { username } = user;
@@ -28,7 +28,7 @@ function MessageRow({ message }: { message: Message }) {
               {username}
             </h3>
             <time className="text-xs text-gray-500">
-              {new Date(created_at).toLocaleString()}
+              {new Date(createdAt).toLocaleString()}
             </time>
           </div>
           <div className="prose prose-sm max-w-none">
@@ -40,7 +40,8 @@ function MessageRow({ message }: { message: Message }) {
   )
 }
 
-function TopicsShow({ topic, current_user: currentUser }: { topic: Topic, current_user: User }) {
+// currentUser comes from shared props, so we can merge types
+function TopicsShow({ topic, currentUser }: TopicsShow & SharedProps) {
   const {
     title,
     category: { name: categoryName },

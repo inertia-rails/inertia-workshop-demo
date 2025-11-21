@@ -1,8 +1,8 @@
-import TopicsTable from "../../components/TopicsTable"
-import AppLayout from "../../layouts/AppLayout"
-import { Category } from "../../types"
+import TopicsTable from "@/components/TopicsTable"
+import AppLayout from "@/layouts/AppLayout"
+import type { CategoriesShow } from "@/types"
 
-function CategoriesShow({ category }: { category: Category }) {
+function CategoriesShow({ category }: CategoriesShow) {
   const { topics } = category;
 
   return (

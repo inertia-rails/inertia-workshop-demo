@@ -6,7 +6,7 @@ type UserProfileProps = {
 }
 
 export default function UserProfile({user, onClose}: UserProfileProps) {
-  const { username, email, topics_count: topicsCount, messages_count: messagesCount, about_me: aboutMe } = user || {};
+  const { username, email, topicsCount, messagesCount, aboutMe } = user || {};
 
   return (
     <div className="space-y-4">

@@ -1,9 +1,9 @@
-import { User } from '../types'
+import { BaseUser } from '@/types'
 
-const Avatar = ({ user }: { user: User }) => {
+const Avatar = ({ user }: { user: BaseUser }) => {
   const { username } = user;
 
-  if (!user) {
+  if (!username) {
     return null;
   }
 

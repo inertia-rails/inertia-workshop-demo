@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   include Pagy::Method
+  include Alba::Inertia::Controller
 
   # Only allow modern browsers supporting webp images, web push, badges, import maps, CSS nesting, and CSS :has.
   allow_browser versions: :modern
@@ -7,13 +8,7 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_permitted_parameters, if: :devise_controller?
 
-  inertia_share categories: -> {
-    Category.includes(:topics).all.as_json(methods: :topics_count)
-  }
-
-  inertia_share current_user: -> {
-    current_user&.as_json(only: [ :username ])
-  }
+  inertia_share { SharedPropsResource.new(self).to_inertia }
 
   def after_sign_in_path_for(resource)
     topics_path

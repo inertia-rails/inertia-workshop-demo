@@ -6,7 +6,6 @@ import {
   MagnifyingGlassIcon,
   ChevronDownIcon
 } from '@heroicons/react/24/outline'
-import { User } from '@/types'
 import Sidebar from "@/components/Sidebar";
 
 interface AppLayoutProps {
@@ -15,9 +14,9 @@ interface AppLayoutProps {
 
 export default function AppLayout({ children }: AppLayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(true)
-  const {props: {current_user: currentUser}} = usePage()
+  const {currentUser} = usePage().props
 
-  const {username} = currentUser || {} as User
+  const username = currentUser.username ?? ''
 
   return (
     <div className="flex h-screen bg-gray-50">
