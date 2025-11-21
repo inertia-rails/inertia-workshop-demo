@@ -9,7 +9,11 @@ class TopicsController < ApplicationController
         messages: { include: :user }
       ])
 
-    render inertia: { topics: }
+    render inertia: {
+      topics: topics,
+      trending_topics: calculate_trending_topics(topics)
+      # trending_topics: InertiaRails.defer { calculate_trending_topics(topics) }
+    }
   end
 
   def show
@@ -22,5 +26,12 @@ class TopicsController < ApplicationController
         messages: { include: :user }
       ])
     render inertia: { topic: }
+  end
+
+  protected
+
+  def calculate_trending_topics(topics)
+    sleep 2 # this is a very manual process!
+    topics.sample(3).pluck("id")
   end
 end
