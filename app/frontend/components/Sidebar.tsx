@@ -16,7 +16,7 @@ function getLinkClasses(currentUrl: string, targetUrl: string) {
 }
 
 export default function Sidebar({ isOpen }: { isOpen: boolean }) {
-  const { props: { categories }, url: currentUrl } = usePage()
+  const { props: { categories, current_user: currentUser }, url: currentUrl } = usePage()
 
   return (
     <aside
@@ -44,7 +44,8 @@ export default function Sidebar({ isOpen }: { isOpen: boolean }) {
               </svg>
               Topics
             </Link>
-            <Link
+            {currentUser && (
+              <Link
               href="/my_topics"
               className={getLinkClasses(currentUrl, '/my_topics').link}
             >
@@ -52,8 +53,9 @@ export default function Sidebar({ isOpen }: { isOpen: boolean }) {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                   d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
-              My Topics
-            </Link>
+                My Topics
+              </Link>
+            )}
           </div>
 
           <div className="pt-6 border-t border-gray-200">

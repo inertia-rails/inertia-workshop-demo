@@ -1,4 +1,5 @@
  class MyTopicsController < ApplicationController
+  before_action :verify_user
   def index
     topics = Topic.includes(:user, :category, messages: :user)
       .joins(:messages)
@@ -13,5 +14,11 @@
       ])
 
     render inertia: { topics: }
+  end
+
+  private
+
+  def verify_user
+    redirect_to topics_path unless current_user
   end
  end
