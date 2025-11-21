@@ -3,12 +3,14 @@ import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/24/outline'
 import { Category, User } from '../../types'
 import Luna from '../../assets/luna.gif'
+import MetaTags from '../../components/MetaTags'
 
 export default function LandingIndex() {
   const { props: { categories, current_user: currentUser } } = usePage<{ categories: Category[], current_user: User }>();
 
   return (
     <>
+      <MetaTags />
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">

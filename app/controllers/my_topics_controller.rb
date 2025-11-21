@@ -1,5 +1,6 @@
  class MyTopicsController < ApplicationController
   before_action :verify_user
+
   def index
     topics = Topic.includes(:user, :category, messages: :user)
       .joins(:messages)
@@ -13,7 +14,10 @@
         messages: { include: :user }
       ])
 
-    render inertia: { topics: }
+    render inertia: { topics: }, meta: [
+      { title: "My Topics - Pups & Pourovers" },
+      { name: "description", content: "View your topics on Pups & Pourovers" }
+    ]
   end
 
   private

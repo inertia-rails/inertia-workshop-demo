@@ -7,6 +7,9 @@ class CategoriesController < ApplicationController
         topics: { include: [ :user, :category, messages: { include: :user } ] }
       ])
 
-    render inertia: { category: }
+    render inertia: { category: }, meta: [
+      { title: "Category: #{category["name"]} - Pups & Pourovers" },
+      { name: "description", content: "Browse topics in the #{category["name"]} category on Pups & Pourovers" }
+    ]
   end
 end
