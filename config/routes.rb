@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   # root "posts#index"
   root "landing#index"
 
-  resources :topics, only: [ :index, :show ] do
+  resources :topics, only: [ :index, :show, :new, :create ] do
     resources :messages, only: [ :create ]
   end
   resources :categories, only: [ :show ]
