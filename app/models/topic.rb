@@ -3,7 +3,7 @@ class Topic < ApplicationRecord
   belongs_to :user, counter_cache: true
   belongs_to :category, counter_cache: true
 
-  accepts_nested_attributes_for :messages, reject_if: :all_blank
+  # accepts_nested_attributes_for :messages, reject_if: :all_blank
 
   validates :title, presence: true
   validates :category_id, presence: true
