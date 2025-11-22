@@ -1,4 +1,6 @@
 class TopicsController < ApplicationController
+  before_action :verify_user, except: [ :index, :show ]
+
   def index
     topics = Topic.all
       .includes(:user, :category, messages: :user)
@@ -44,5 +46,9 @@ class TopicsController < ApplicationController
 
   def topic_params
     params.require(:topic).permit(:title, :category_id, messages_attributes: [ :body ])
+  end
+
+  def verify_user
+    redirect_to topics_path unless current_user
   end
 end
