@@ -4,10 +4,11 @@ import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/react'
 import {
   Bars3Icon,
   MagnifyingGlassIcon,
-  ChevronDownIcon
+  ChevronDownIcon,
 } from '@heroicons/react/24/outline'
 import { User } from '@/types'
 import Sidebar from "@/components/Sidebar";
+import Chat from "@/components/Chat";
 
 interface AppLayoutProps {
   children: ReactNode
@@ -21,7 +22,7 @@ export default function AppLayout({ children }: AppLayoutProps) {
 
   return (
     <div className="flex h-screen bg-gray-50">
-      <Sidebar isOpen={sidebarOpen} />
+      <Sidebar isOpen={sidebarOpen}/>
 
       <div className="flex-1 flex flex-col overflow-hidden">
         <header className="bg-white border-b border-gray-200 h-16 flex items-center justify-between px-6">
@@ -95,6 +96,8 @@ export default function AppLayout({ children }: AppLayoutProps) {
           {children}
         </main>
       </div>
+
+      {currentUser && (<Chat />)}
     </div>
   )
 }
