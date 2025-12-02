@@ -69,4 +69,4 @@ gem "vite_rails", "~> 3.0"
 
 gem "devise", "~> 4.9"
 
-gem "pagy", "~> 43.0"
+gem "pagy", "~> 43.1"
