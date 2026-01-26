@@ -67,6 +67,6 @@ gem "inertia_rails", "~> 3.12"
 
 gem "vite_rails", "~> 3.0"
 
-gem "devise", "~> 4.9"
+gem "devise", "~> 5.0"
 
 gem "pagy", "~> 43.0"
